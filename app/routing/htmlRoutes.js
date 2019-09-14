@@ -1,11 +1,18 @@
-const server = require('./server.js')
-
-server.app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/home.html"));
-});
-
-server.app.get("/survey", function(req, res) {
-    res.sendFile(path.join(__dirname, "survey.html"));
-});
+const express = require('express')
+const path = require('path')
 
 
+module.exports = function(app) {
+
+    app.get("/", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/home.html"));
+    });
+    
+    app.get("/survey", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/survey.html"));
+    });
+
+    app.get("*", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/home.html"));
+      });
+}
