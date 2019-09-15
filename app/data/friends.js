@@ -33,7 +33,7 @@ var friends = [
   },
   {
     "name":"Ben",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://i1.wp.com/koafitusa.com/wp-content/uploads/2018/02/075A8681.jpg?resize=300%2C200&ssl=1",
     "scores":[
         2,
         2,
