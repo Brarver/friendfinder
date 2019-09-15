@@ -1,3 +1,100 @@
-h4 {
-    color: red;
+/*********************************************HOME*************************************************************/
+body {
+    margin: 0;
+    background-image: url("white_sand.png");
+}
+
+.jumbotron {
+    margin-top: 200px;
+    background-color: #337ab7;
+    color: white;
+}
+
+.jumbotron h1 {
+    text-align: center;
+}
+
+.jumbotron h2 {
+    text-align: center;
+}
+
+.button-holder {
+    text-align: center;
+}
+
+.btn {
+    background-color: white;
+    color: #337ab7;
+    font-weight: bold;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.footer-links {
+    font-weight: bold;
+}
+
+/**********************************************Survey*****************************************************************/
+.body-survey {
+    text-align: center;
+}
+.header {
+    height: 100px;
+    text-align: center;
+    background-color:#337ab7;
+    color: white;
+    margin-bottom: 50px;
+    
+}
+
+#survey {
+    font-size: 80px;
+}
+
+#name,
+#photo {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.number {
+    display: inline-block;
+    font-size: 50px;
+    color: white;
+    background-color: #337ab7;
+    border-radius: 10px;
+    margin-right: 20px;
+    
+}
+
+.ques {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.menu {
+    width: 500px;
+}
+
+#submit {
+    background-color: #337ab7;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/*********************************************MODAL*********************************************************************/
+
+.modal {
+    color: #337ab7;
+    font-size: 40px;
+}
+.modal-footer {
+    text-align: center;
 }
