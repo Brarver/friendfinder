@@ -9,6 +9,33 @@ module.exports = function(app) {
 
     app.post("/api/friends", function(req, res) {
         
+        var userScores = req.body.scores
+        var scores = []
+
+        for (var i = 0; i < friends.length; i++) {
+
+            var compareScores = userScores.map(function(item, index) {
+                return item - friends[i].scores[index];
+              })
+
+            compareScores = compareScores.map(Math.abs)
+            var difference = compareScores.reduce(function(a, b) { return a + b; }, 0);
+            scores.push(difference)
+
+            console.log('comparrison array friend: ' + [i] + ': ' + compareScores)
+        }
+        var newScores = []
+        newScores = scores.slice(0)
+        var ascending = newScores.sort(function(a, b){return a-b});
+        console.log('scores: ' + scores)
+        console.log('ascending: ' + ascending)
+
+        var matchNumber = scores.findIndex(function(score) {
+            return score === ascending[0]
+        })
+        var match = friends[matchNumber]
+        console.log(match)
+        friends.push(req.body)
         
     });
 
