@@ -36,6 +36,7 @@ module.exports = function(app) {
         var match = friends[matchNumber]
         console.log(match)
         friends.push(req.body)
+        res.json(match)
         
     });
 

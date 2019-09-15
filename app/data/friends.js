@@ -1,7 +1,7 @@
 var friends = [
     {
     "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://fitsmallbusiness.com/wp-content/uploads/2019/01/stephen-seifert-press-release-examples.png",
     "scores":[
         5,
         1,
@@ -17,7 +17,7 @@ var friends = [
   },
   {
     "name":"Chelsey",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://i1.wp.com/koafitusa.com/wp-content/uploads/2018/02/075A8681.jpg?resize=300%2C200&ssl=1",
     "scores":[
         4,
         4,
